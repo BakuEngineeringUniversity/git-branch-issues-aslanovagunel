@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/brown5"
+    tools:context=".GameActivity">
+
+    <LinearLayout
+        android:layout_width="386dp"
+        android:layout_height="698dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/player1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="80dp"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/kingimage_black"
+                android:layout_width="333dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:rotation="180"
+                android:background="@drawable/kingimage_black1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/status1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="24sp" />
+                <TextView
+                    android:id="@+id/player1name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/player_1"
+                    android:rotation="180"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/board"
+            android:layout_width="357dp"
+            android:layout_height="419dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="06" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="07" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="08" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="09" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="10" />
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="11" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="12" />
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="13" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="14" />
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="15" />
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="16" />
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="17" />
+
+                <ImageView
+                    android:id="@+id/imageView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="18" />
+
+                <ImageView
+                    android:id="@+id/imageView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="19" />
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="20" />
+
+                <ImageView
+                    android:id="@+id/imageView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="21" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="22" />
+
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="23" />
+
+                <ImageView
+                    android:id="@+id/imageView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="24" />
+
+                <ImageView
+                    android:id="@+id/imageView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="25" />
+
+                <ImageView
+                    android:id="@+id/imageView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="26" />
+
+                <ImageView
+                    android:id="@+id/imageView27"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="27" />
+
+                <ImageView
+                    android:id="@+id/imageView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="28" />
+
+                <ImageView
+                    android:id="@+id/imageView29"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="29" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView30"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="30" />
+
+                <ImageView
+                    android:id="@+id/imageView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="31" />
+
+                <ImageView
+                    android:id="@+id/imageView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="32" />
+
+                <ImageView
+                    android:id="@+id/imageView33"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="33" />
+
+                <ImageView
+                    android:id="@+id/imageView34"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="34" />
+
+                <ImageView
+                    android:id="@+id/imageView35"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="35" />
+
+                <ImageView
+                    android:id="@+id/imageView36"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="36" />
+
+                <ImageView
+                    android:id="@+id/imageView37"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="37" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView38"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="38" />
+
+                <ImageView
+                    android:id="@+id/imageView39"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="39" />
+
+                <ImageView
+                    android:id="@+id/imageView40"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="40" />
+
+                <ImageView
+                    android:id="@+id/imageView41"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="41" />
+
+                <ImageView
+                    android:id="@+id/imageView42"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="42" />
+
+                <ImageView
+                    android:id="@+id/imageView43"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="43" />
+
+                <ImageView
+                    android:id="@+id/imageView44"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="44" />
+
+                <ImageView
+                    android:id="@+id/imageView45"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="45" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView46"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="46" />
+
+                <ImageView
+                    android:id="@+id/imageView47"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="47" />
+
+                <ImageView
+                    android:id="@+id/imageView48"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="48" />
+
+                <ImageView
+                    android:id="@+id/imageView49"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="49" />
+
+                <ImageView
+                    android:id="@+id/imageView50"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="50" />
+
+                <ImageView
+                    android:id="@+id/imageView51"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="51" />
+
+                <ImageView
+                    android:id="@+id/imageView52"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="52" />
+
+                <ImageView
+                    android:id="@+id/imageView53"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="53" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView54"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="54" />
+
+                <ImageView
+                    android:id="@+id/imageView55"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="55" />
+
+                <ImageView
+                    android:id="@+id/imageView56"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="56" />
+
+                <ImageView
+                    android:id="@+id/imageView57"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="57" />
+
+                <ImageView
+                    android:id="@+id/imageView58"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="58" />
+
+                <ImageView
+                    android:id="@+id/imageView59"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="59" />
+
+                <ImageView
+                    android:id="@+id/imageView60"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="60" />
+
+                <ImageView
+                    android:id="@+id/imageView61"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="61" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView62"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="62" />
+
+                <ImageView
+                    android:id="@+id/imageView63"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="63" />
+
+                <ImageView
+                    android:id="@+id/imageView64"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="64" />
+
+                <ImageView
+                    android:id="@+id/imageView65"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="65" />
+
+                <ImageView
+                    android:id="@+id/imageView66"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="66" />
+
+                <ImageView
+                    android:id="@+id/imageView67"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="67" />
+
+                <ImageView
+                    android:id="@+id/imageView68"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/blacks"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="68" />
+
+                <ImageView
+                    android:id="@+id/imageView69"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/white11"
+                    android:contentDescription="@string/todo"
+                    android:onClick="tap"
+                    android:tag="69" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/player2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/player2name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/player_2"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/status2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/kingimage_white"
+                android:layout_width="313dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/kingimage_white1" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

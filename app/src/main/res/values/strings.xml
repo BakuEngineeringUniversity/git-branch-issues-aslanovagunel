@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">chess</string>
+    <string name="c_h_e_e_s">C H E E S</string>
+    <string name="move_in_silence">move_in_silence</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="submit">Submit</string>
+    <string name="let_s_play_chess">Let\'s Play Chess !</string>
+    <string name="player_1">""Player 1</string>
+    <string name="player_2">""Player 2</string>
+    <string name="chess_image">chess image</string>
+    <string name="button_text">Start</string>
+    <string name="turnmessage">turn</string>
+    <string name="win">Qazandınız!\n</string>
+    <string name="lose">Məğlub oldunuz!</string>
+    <string name="login">Login</string>
+    <string name="todo">TODO</string>
+</resources>
